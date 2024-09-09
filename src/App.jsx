@@ -6,6 +6,7 @@ import { Main } from './componet/main/Main'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Trackers } from './componet/tracker/Trackers';
 import { TrackingResult} from './componet/tracking-result/Tracking-result';
+import Footer from './componet/footer/Footer';
 
 
 // import { Trackingresult } from './componet/tracking-result/Tracking-result'
@@ -32,7 +33,7 @@ function App() {
       
     </Routes>
 
-    
+    <Footer />
   </Router>
   )
 }

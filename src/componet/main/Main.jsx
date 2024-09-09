@@ -77,7 +77,7 @@ export const Main = () => {
 
   return (
     <div className="container text-center my-5">
-    <h2 className="mb-4" style={{ color: '#FF5722' }}>You have a need, we have the SOLUTION</h2>
+    <h2 className="mb-4" style={{ color: '#FF5722', fontWeight:800}}>You have a need, we have the SOLUTION</h2>
     <div className="row">
       {services.map((service, index) => (
         <div className="col-md-4 mb-3 body-man" key={index}>

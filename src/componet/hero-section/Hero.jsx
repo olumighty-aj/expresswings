@@ -7,6 +7,7 @@ export const Hero = () => {
 			id="carouselExampleCaptions"
 			className="carousel slide"
 			data-bs-ride="carousel"
+      style={{marginTop:'20px'}}
 		>
 			<div className="carousel-indicators">
 				<button
@@ -33,7 +34,7 @@ export const Hero = () => {
 			<div className="carousel-inner">
 				<div className="carousel-item active">
 					<img
-						src="/src/componet/hero-section/car3.jpg"
+						src="/src/componet/hero-section/orange.png"
 						className="d-block w-100"
 						alt="First slide"
 					/>
@@ -48,7 +49,7 @@ export const Hero = () => {
 				</div>
 				<div className="carousel-item">
 					<img
-						src="/src/componet/hero-section/car2.jpeg"
+						src="/src/componet/hero-section/far.jpeg"
 						className="d-block w-100"
 						alt="Second slide"
 					/>
