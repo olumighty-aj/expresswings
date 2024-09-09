@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <Router basename="/expresswings">
+    <Router>
     <NavBar /> 
     
     <Hero />
