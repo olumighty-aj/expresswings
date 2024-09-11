@@ -1,60 +1,4 @@
-/* Base styles */
-/* .navbar {
-    background-color: #fff;
-    border: 2px solid orangered;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    height: 60px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  } */
-  
-  /* .navbar-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  } */
-  
-  /* .logo h1 {
-    font-size: 16px;
-    position: absolute;
-    width: 80px;
-    top: 40px;
-    color: #000;
-    margin: 0;
-  } */
 
-  /* .logo-img {
-    width: 200px; 
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  .nav-menu {
-    display: flex;
-    gap: 1.5rem;
-    margin-left: 400px;
-  } */
-  
-  /* .nav-menu a {
-    color: #000;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-menu a:hover {
-    color: orange;
-  } */
-  
-
-  /* .track-button {
-    margin-left: auto;
-  }
-   */
 
   .track-btn {
     background-color: red;
@@ -67,7 +11,9 @@
   }
   
   .track-btn:hover {
-    background-color: darkred;
+    background-color: green;
+    color: white;
+    
   }
   
   .logo-img {
@@ -75,53 +21,69 @@
     height: auto;
     margin-right: 10px;
   }
-  /* Hamburger menu */
-  /* .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: 1rem;
-  } */
-  
-  /* .hamburger .bar {
-    height: 3px;
-    width: 25px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: all 0.3s ease;
-  }
-   */
-  /* Responsive Styles */
-  /* @media (max-width: 768px) {
-    .nav-menu {
-      position: relative;
-      top: 223px;
-      right: 205px;
-      width: 100%;
-     
-      background-color: white;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      transform: translateY(-100%);
-      transition: transform 0.3s ease;
-      z-index: 999;
-  } */
-  
-    /* .nav-menu.open {
-      transform: translateY(0);
-    }
-  
-    .hamburger {
-      display: flex;
-      position: relative;
-      right: 42%;
-      border-radius: 10px;
-  }
 
+  .active:hover{
+    color: white;
+    font-weight: 700;
+    background-color: orangered;
+    border-radius: 10px;
     
-  } */
+  }
+  .nav-link:hover{
+    color: white;
+    font-weight: 700;
+    background-color: orangered;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-right: 10px;
+
+  }
   
+  /* Initial hidden state for navbar */
+.slide-out {
+  opacity: 0;
+  transform: translateY(-100px); /* Start off the screen (top) */
+  transition: all 0.5s ease-out;
+}
 
+/* When the navbar is in view */
+.slide-in {
+  opacity: 1;
+  transform: translateY(0); /* Slide into view */
+  transition: all 0.5s ease-out;
+}
 
+/* Initial hidden state for navbar links (li items) */
+.li-slide-out li {
+  opacity: 0;
+  transform: translateX(-50px); /* Start to the left */
+  transition: all 0.5s ease-out;
+}
+
+/* When navbar links (li items) come into view */
+.li-slide-in li {
+  opacity: 1;
+  transform: translateX(0); /* Slide into position */
+  transition: all 0.5s ease-out;
+}
+
+/* Optional stagger effect for li items (one after the other) */
+.li-slide-in li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.li-slide-in li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.li-slide-in li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.li-slide-in li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.li-slide-in li:nth-child(5) {
+  transition-delay: 0.5s;
+}

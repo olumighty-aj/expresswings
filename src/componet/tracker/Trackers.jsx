@@ -1,10 +1,19 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
+
+import './tracker.css'
 
 export const Trackers = () => {
   const [trackingNumber, setTrackingNumber] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate(); // Correctly use `useNavigate` to get the navigate function
+  const navigate = useNavigate();
+
+  const { ref, inView } = useInView({
+    triggerOnce: true, 
+    threshold: 0.1,   
+  });
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +29,7 @@ export const Trackers = () => {
   };
 
     return (
-      <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
+      <div ref={ref} className={`container d-flex justify-content-center align-items-center ${inView ? 'slide-in-right' : 'slide-out-right'}`} style={{ minHeight: '100vh' }}>
   <div className="card p-4 text-white" style={{ backgroundColor: '#FF5722', borderRadius: '10px', maxWidth: '600px', width: '100%' }}>
     <h2 className="text-white">
       <span role="img" aria-label="magnifying glass">🔍</span> Track Package{' '}
@@ -38,7 +47,9 @@ export const Trackers = () => {
           onChange={(e) => setTrackingNumber(e.target.value)}
           required
         />
-        <button type="submit" className="btn btn-dark" disabled={isLoading}>
+        
+      </div>
+      <button type="submit" className="btn btn-dark buttt" disabled={isLoading}>
           {isLoading ? (
             <div className="spinner-border spinner-border-sm text-light" role="status">
               <span className="visually-hidden">Loading...</span>
@@ -47,7 +58,6 @@ export const Trackers = () => {
             'TRACK RESULT'
           )}
         </button>
-      </div>
     </form>
 
     {/* Informational note */}

@@ -1,0 +1,13 @@
+  /* Initial hidden state for navbar */
+  .slide-out {
+    opacity: 0;
+    transform: translateY(-300px); /* Start off the screen (top) */
+    transition: all 0.8s ease-out;
+  }
+  
+  /* When the navbar is in view */
+  .slide-in {
+    opacity: 1;
+    transform: translateY(0); /* Slide into view */
+    transition: all 0.8s ease-out;
+  }

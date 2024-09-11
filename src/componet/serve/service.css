@@ -1,0 +1,39 @@
+.rowes{
+    background-color: orangered;
+    padding: 20px;
+    border-radius:5px ;
+}
+
+.iconss{
+    color: white;
+    border-radius: 0%;
+    
+}
+
+.icons{
+    color: orangered;
+}
+
+.oran{
+    color: orangered;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.pest{
+    font-weight: 600;
+}
+
+/* Slide-out state (initial) */
+.slide-out {
+    opacity: 0;
+    transform: translateY(50px); /* Start below the viewport */
+    transition: all 0.6s ease-out;
+  }
+  
+  /* Slide-in state (when in view) */
+  .slide-in {
+    opacity: 1;
+    transform: translateY(0); /* Slide into view */
+    transition: all 0.6s ease-out;
+  }
