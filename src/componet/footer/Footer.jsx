@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import logo from '/public/express-logo.png'; 
+import logo from '/express-logo.png'; 
 import './footer.css';
 
 const Footer = () => {
