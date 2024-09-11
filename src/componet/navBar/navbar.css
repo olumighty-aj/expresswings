@@ -16,21 +16,7 @@
 
   }
 
-  .navbar-collapse{
-   
-    
-  }
-
-  .navbar-collapse .nav-link{
-    color: white;
-    padding: 10px;
-    border: 1px solid white;
-    margin-top: 7px;
-    
-    
-  
-  }
-  
+ 
   .logo-img {
     width: 150px; 
     height: auto;
@@ -44,6 +30,7 @@
     border-radius: 10px;
     
   }
+  
   .nav-link:hover{
     color: white;
     font-weight: 700;
