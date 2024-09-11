@@ -27,14 +27,14 @@
     border: 1px solid white;
     margin-top: 7px;
     
-    background-color: orangered;
-    border-radius: 10px;
+    
+  
   }
   
   .logo-img {
     width: 150px; 
     height: auto;
-    margin-right: 10px;
+    margin-right: 10.5px;
   }
 
   .active:hover{
