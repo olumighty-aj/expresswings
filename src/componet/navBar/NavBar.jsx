@@ -1,6 +1,6 @@
 
 import './navbar.css';
-import logo from './express-logo.png';
+import logo from '/public/express-logo.png';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useInView } from 'react-intersection-observer';

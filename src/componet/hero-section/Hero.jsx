@@ -34,7 +34,7 @@ export const Hero = () => {
 			<div className="carousel-inner">
 				<div className="carousel-item active">
 					<img
-						src="/src/componet/hero-section/orange.png"
+						src="/public/orange.png"
 						className="d-block w-100"
 						alt="First slide"
 					/>
@@ -49,7 +49,7 @@ export const Hero = () => {
 				</div>
 				<div className="carousel-item">
 					<img
-						src="/src/componet/hero-section/far.jpeg"
+						src="/public/far.jpeg"
 						className="d-block w-100"
 						alt="Second slide"
 					/>
@@ -65,7 +65,7 @@ export const Hero = () => {
 				</div>
 				<div className="carousel-item">
 					<img
-						src="/src/componet/hero-section/car.jpg"
+						src="/public/car.jpg"
 						className="d-block w-100"
 						alt="Third slide"
 					/>
