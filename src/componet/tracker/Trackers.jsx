@@ -36,7 +36,7 @@ export const Trackers = () => {
       <span className="small" style={{ fontWeight: 'lighter' }}> / With Your Tracking Number</span>
     </h2>
 
-    {/* Form for tracking package */}
+    
     <form className="my-3" onSubmit={handleSubmit}>
       <div className="input-group mb-3">
         <input

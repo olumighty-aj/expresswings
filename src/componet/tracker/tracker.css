@@ -16,16 +16,16 @@
     margin-left: 10px;
   }
 
-  /* Initial state for the component: hidden and off the right side of the screen */
-.slide-out-right {
-  opacity: 0;
-  transform: translateX(100%);
-  transition: all 0.5s ease-out;
-}
 
+  /* .slide-out-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-out;
+  } */
+  
 /* When the component comes into view, it slides in from the right */
-.slide-in-right {
+/* .slide-in-right {
   opacity: 1;
   transform: translateX(0);
   transition: all 0.5s ease-out;
-}
+} */

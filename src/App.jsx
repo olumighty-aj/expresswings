@@ -24,10 +24,8 @@ function App() {
     <Services />
     <Trackers />
     <Routes>
-      {/* Home route */}  
-      <Route path="/" element={<></>} /> {/* Nothing changes on the home route */}
-
-      {/* Route for track-package, where the Tracker component will appear */}
+     
+      <Route path="/" element={<></>} /> 
       <Route path="/track-package" element={<Trackers />} />
       <Route path="/tracking-result/:trackingNumber" element={<TrackingResult />} />
       
